@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Movie Recommendation</h1>
+    <p>This is movie recommendation</p>
+  </div>
+
+  <div class="container">
+    <form method='post'>
+
+      <div class="text">
+        <h1>Text Area：</h1>
+        <textarea id="w3review" name="text" rows="4" cols="80" placeholder="Describe the movie you liked">Star Wars</textarea>
+        <br><br>
+      </div>
+
+
+      <div class="movie">
+        <h1>Category：</h1>
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          {% for c in categorys %}
+          <div class="col-md-2">
+            <div class="card">
+              <!-- <img src=""" class=" card-img-top" alt="..." /> -->
+              <div class="card-body">
+                <h4 class="card-title">{{ categorys[c][1] }}</h4>
+                <!-- <p class="card-text">
+                  This category is {{ categorys[c][1] }}.
+                </p> -->
+                <input type="radio" name={{ c }} value={{ categorys[c][1] }}> Like<br>
+                <input type="radio" checked name={{ c }} value=None> Dislike<br>
+              </div>
+            </div><br>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br><br>
+    </form>
+  </div>
+
+</body>
+
+</html>

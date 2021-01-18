@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div style="margin:20px 30px">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Ranking</th>
+        <th scope="col">Movie</th>
+        <th scope="col">Category</th>
+        <th scope="col">Genres</th>
+        <th scope="col">rating_value</th>
+        <th scope="col">rating_count</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for Genres,StoryLine,category,name,rating_count,rating_value in result %}
+      <tr>
+          <th scope="row">{{loop.index}}</th>
+          <td>{{name}}</td>
+          <td>{{category}}</td>
+          <td>{{Genres}}</td>
+          <td>{{rating_value}}</td>
+          <td>{{rating_count}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    <table>
+    </div>
+    <br>
+      <button type="Back" class="btn btn-primary" onclick="history.back()">Back</button>
+    <br><br>
+
+  </body>
+</html>

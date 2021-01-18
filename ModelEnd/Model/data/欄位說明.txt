@@ -1,0 +1,10 @@
+資料說明-
+共22個類別中爬取前50名，因有重複電影，排除重複後剩餘668部，以name、rating_value、StoryLine作為重複為主。
+欄位說明-
+name	       :電影或影集名稱
+category       :22類別中其一
+rating_value   :評分
+rating_count   :評分數量
+StoryLine      :故事線(簡介)
+keywords       :關鍵字
+Genres         :類型，與category類似，但可能會記錄多個
