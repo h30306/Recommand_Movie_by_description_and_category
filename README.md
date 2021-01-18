@@ -7,7 +7,8 @@ Recommend favorite movies based on user input description and favorite movie cat
 
 ## Introduction
 
-This Library implements Movie Recommandation website, by using sentence embedding model BERT & text feature extraction method TF-IDF, to select the movies that users might be interested in. We build this system with two flask model for Predict Vector ModelEnd and Website WebEnd.
+This library implements Movie Recommandation website by using sentence embedding model BERT & text feature extraction method TF-IDF, to select the movies that users might be interested in. We build this system with two flask model for Predict Vector ModelEnd and Website WebEnd.
+<img src="system.png" width="100%">
 
 ## Requirement
 
