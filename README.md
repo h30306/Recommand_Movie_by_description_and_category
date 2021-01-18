@@ -23,20 +23,20 @@ This Library implements Movie Recommandation website, by using sentence embeddin
 
 ## Start Up
 
-Start Flask of Model End<br>
+### Start Flask of Model End<br>
 1. Setup output port in line 20 in RecommandMovie.py<br>
 2. Start ModelEnd Flask<br>
 ```
 $ python3 RecommandMovie.py
 ```
-Deploy BERT Serving client<br>
+### Deploy BERT Serving client<br>
 3. [Download BERT base model](https://storage.googleapis.com/bert_models/2020_02_20/uncased_L-12_H-768_A-12.zip)<br>
 4. Start BERT Serving client<br>
 ```
 $ PTHNAME="./uncased_L-12_H-768_A-12" #Path of Model
 $ bert-serving-start -model_dir ${PTHNAME} -num_worker=1
 ```
-Start Flask of Website End<br>
+### Start Flask of Website End<br>
 5. Setup ModelEnd IP and port in line 71 in app.py<br>
 6. Start WebEnd Flask<br>
 ```
