@@ -1,6 +1,6 @@
 # Recommand_Movie_by_description_and_category
 Recommend favorite movies based on user input description and favorite movie category
-<img src="website.png" width="50%">
+<img src="website.png" width="100%">
 ### Author
 
 [Howard W. Chung](https://github.com/h30306)
