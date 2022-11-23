@@ -1,4 +1,4 @@
-# Recommand_Movie_by_description_and_category
+# Hybrid Movie Recommandation System by description and category
 Recommend favorite movies based on user input description and favorite movie category
 <img src="website.png" width="100%">
 ### Author
